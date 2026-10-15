@@ -1,0 +1,42 @@
+# Build outputs
+/build/
+/Release/
+/Debug/
+/x64/
+/茶会服务器8/Release/
+/茶会服务器8/Debug/
+/茶会服务器8/x64/
+/packages/
+*.obj
+*.pdb
+*.ilk
+*.idb
+*.ipdb
+*.iobj
+*.exp
+*.tlog
+*.log
+*.dll
+*.exe
+*.zip
+
+# Visual Studio
+.vs/
+*.vcxproj.user
+*.aps
+*.suo
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.opendb
+
+# Python
+__pycache__/
+*.pyc
+
+# Secrets
+db_defaults.local.h
+*.pfx
+*.pem
+*.key
+*.p12

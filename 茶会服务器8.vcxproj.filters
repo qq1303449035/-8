@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MySQL.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="appServer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="network\tls_transport.h" />
+    <ClInclude Include="network\protocol.h" />
+    <ClInclude Include="MySQL.h" />
+    <ClInclude Include="hero_permissions_parser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hero_permissions_store.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="network\login_proof.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="social_diagnostics.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="console_output.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="chat_room.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="roster_display.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="friends_store.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="avatar_store.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="avatar_session.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="media_store.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="media_session.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="network\media_codec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="network\avatar_codec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sessions.h" />
+    <ClInclude Include="online_time.h" />
+    <ClInclude Include="online_time_store.h" />
+    <ClInclude Include="online_ranking_store.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="startup_diagnostics.h" />
+  </ItemGroup>
+</Project>
