@@ -35,6 +35,7 @@ struct Worker {
     struct { Sessions::Binding binding; } member;
     chh::tls::Stream stream;
     uint64_t sent_auto_afk_command_revision = UINT64_MAX;
+    uint64_t sent_hero_delay_command_revision = UINT64_MAX;
     Worker(Sessions& sessions, Sessions::Binding binding) : online(sessions), member{binding} {
         require(online.current(binding), "fixture worker has a current binding");
     }

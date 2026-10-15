@@ -19,10 +19,10 @@ function Slice-Source([string]$startMarker, [string]$endMarker) {
 }
 $senders = Slice-Source 'bool send_packet(' 'bool send_chat_result('
 $handler = Slice-Source '        } else if (packet.type() == chh::wire::Type::game_auto_afk_set)' `
-    '        } else if (packet.type() == chh::wire::Type::game_skin_block_set)'
+    '        } else if (packet.type() == chh::wire::Type::game_move_distance_set)'
 $handler = '        if' + $handler.Substring('        } else if'.Length) + '        }'
 $forward = Slice-Source '            const auto auto_afk = online.auto_afk_command_snapshot(member.binding);' `
-    '            const auto skin_block = online.skin_block_command_snapshot(member.binding);'
+    '            const auto move_distance = online.move_distance_command_snapshot(member.binding);'
 $utf8 = [Text.UTF8Encoding]::new($false)
 [IO.File]::WriteAllText((Join-Path $build 'auto_afk_senders.inc'), $senders, $utf8)
 [IO.File]::WriteAllText((Join-Path $build 'auto_afk_handler.inc'), $handler, $utf8)
